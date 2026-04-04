@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://gym-app-8sxq.onrender.com/api'
 });
+
 
 instance.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
@@ -11,5 +13,6 @@ instance.interceptors.request.use((config) => {
   }
   return config;
 });
+
 
 export default instance;
