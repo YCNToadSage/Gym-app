@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+/* Home hero */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  div[style*="padding: 5rem"] {
+    padding: 3rem 1rem !important;
+  }
+
+  div[style*="gap: 1rem"] a {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Cards and grids */
+@media (max-width: 768px) {
+  div[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div[style*="width: 250px"],
+  div[style*="width: 280px"],
+  div[style*="width: 260px"] {
+    width: 90% !important;
+  }
+}
+
+/* Tables */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.4rem;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  footer div[style] {
+    flex-direction: column;
+  }
+}
