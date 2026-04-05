@@ -18,6 +18,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/classes', require('./routes/classes'));
 app.use('/api/bookings', require('./routes/bookings'));
 app.use('/api/members', require('./routes/members'));
+app.use('/api/password', require('./routes/resetPassword'));
 
 app.get('/', (req, res) => {
   res.json({ message: 'Gym API running' });
