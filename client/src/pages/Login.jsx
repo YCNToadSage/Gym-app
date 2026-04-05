@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from '../api/axios';
 
 function Login() {
@@ -47,6 +47,9 @@ function Login() {
         <button style={styles.button} onClick={handleSubmit}>
           {isSignup ? 'Sign Up' : 'Login'}
         </button>
+        <p style={{ textAlign: 'center' }}>
+          <Link to="/forgot-password" style={{ color: '#e94560' }}>Forgot Password?</Link>
+        </p>
         <p style={styles.toggle}>
           {isSignup ? 'Already have an account?' : "Don't have an account?"}
           <span style={styles.link} onClick={() => setIsSignup(!isSignup)}>

@@ -8,12 +8,16 @@ import MemberDashboard from './pages/MemberDashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
+import ResetPassword from './pages/ResetPassword';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+	<Route path="/forgot-password" element={<ForgotPassword />} />
+	<Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/" element={<Home />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/membership" element={<Membership />} />
