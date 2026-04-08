@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-  baseURL: 'https://gym-app-exg7.onrender.com'
+  baseURL: 'http://3.87.88.64:5000/'
 });
 
 
