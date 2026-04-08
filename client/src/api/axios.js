@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-  baseURL: 'https://gym-app-8sxq.onrender.com/api'
+  baseURL: 'https://gym-app-exg7.onrender.com'
 });
 
 

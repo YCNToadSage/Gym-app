@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "...",
+    "better-sqlite3": "...",
+    "cors": "...",
+    "dotenv": "...",
+    "express": "...",
+    "jsonwebtoken": "..."
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
